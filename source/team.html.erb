@@ -1,0 +1,21 @@
+---
+title: Le Wagon - Middleman - Team
+---
+
+<!-- <div class="container">
+  <div class="row">
+    <img src='https://kitt.lewagon.com/placeholder/users/xgastaud' class="avatar-large"/>
+    <img src='https://kitt.lewagon.com/placeholder/users/ninachanteau' class="avatar-large"/>
+  </div>
+</div> -->
+
+<ul class="list-inline text-center">
+  <% ["xgastaud", "ninachanteau"].each do |gh_username| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle avatar-large" %>
+      <h3><%= gh_username.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
+
+
